@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow - Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>⏱️ FocusFlow</h1>
+        
+        <div class="timer-display">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+
+        <div class="controls">
+            <button id="btn-start">Iniciar</button>
+            <button id="btn-pause">Pausar</button>
+            <button id="btn-reset">Reiniciar</button>
+        </div>
+
+        <div class="modes">
+            <button onclick="setTimer(25)">Foco (25 min)</button>
+            <button onclick="setTimer(5)">Pausa Curta (5 min)</button>
+        </div>
+
+        <p id="status-text">Hora de focar!</p>
+    </div>
+
+    <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
